@@ -322,7 +322,7 @@ Do not present a build, a mockup or a "quick preview" until this gate passes. If
 
 Mark each item yes, no, or not applicable. A "no" on any item marked **block** means you fix it before handoff. Two or more ordinary "no"s also means you fix first.
 
-Visual v3 self-review completed 13 November 2026. Evidence, captures and approved exceptions: [completed quality gate](../review/visual-v3/QUALITY-GATE.md). The later UX review permits distinct Briefing, Grow and Pine Band labels and one Home Insights heading-left/link-right opening. Those overrides apply to the corresponding checklist items below.
+Visual v3 self-review recorded 13 November 2026. **The rendered design was subsequently not approved by Amos; visual review is reopened.** See [session.md](../../session.md) for the current feedback and design-first next steps. The checked items below preserve the earlier implementation self-assessment and do not establish final design approval. Evidence, captures and approved exceptions: [quality gate record](../review/visual-v3/QUALITY-GATE.md). The later UX review permits distinct Briefing, Grow and Pine Band labels and one Home Insights heading-left/link-right opening. Those overrides apply to the corresponding checklist items below.
 
 **Blockers**
 

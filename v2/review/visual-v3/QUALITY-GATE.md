@@ -1,5 +1,7 @@
 # Northway visual v3 quality gate
 
+**Review status updated 13 November 2026:** Amos did not approve the rendered design. The visual result remains too close to the previous version and needs a stronger design pass. This record preserves the earlier implementation checks; its visual self-assessment is superseded by the feedback and next steps in [session.md](../../../session.md). Technical passes do not establish visual or commercial readiness.
+
 Self-review completed 13 November 2026 against [WEBSITE-QUALITY-BAR](../../design/WEBSITE-QUALITY-BAR.md), the [approved build contract](../../VISUAL-V3-BUILD-CONTRACT.md), and the [Refero reference lock](../../design/refero/SYNTHESIS.md). This is the implementation self-review. The UX lead approved the plan; no separate claim of UX approval of these final screenshots is made.
 
 ## Brief and reference lock
