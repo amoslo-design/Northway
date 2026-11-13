@@ -1,3 +1,5 @@
+The v2 build still looked AI-generated. v3 fixes are in v2/DECISIONS-V2.md (section "v3 decisions"), v2/design/CRITIQUE-V2.md and v2/docs/UX-CRITIQUE-V2.md, which override earlier docs. Key change: white #FFFFFF canvas with #E8E8E4 elevated surfaces, no numbering, no monogram.
+
 # AGENTS.md
 
 Instructions for Codex and Gemini (and any other agent) building the Northway website template this week. Read this file first, then follow the docs it points to. Do not wait for Amos, Designer or UX Lead, and do not ask clarifying questions that block the build. If something is still open, use the working assumption in [docs/decisions.md](docs/decisions.md) or [docs/spec.md](docs/spec.md), pick the calmer and more accessible option, and note it in the README.
