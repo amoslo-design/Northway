@@ -1,3 +1,5 @@
+> Historical v1 visual guide. The approved [v2 decisions](../v2/DECISIONS-V2.md), [brand](../v2/design/BRAND-V2.md) and [conversion rules](../v2/docs/CONVERSION.md) now control colour, type, surfaces, sections and demo disclosure. `design/tokens/tokens.json` contains the implemented v2 values.
+
 # Northway - Design System
 
 **Template and demo studio:** Northway, always labelled Sample. Email `hello@northway.example`. Promise: “Work that earns the next project.”  

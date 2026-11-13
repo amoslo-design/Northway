@@ -180,7 +180,7 @@ def emit_css(rows, tree) -> str:
     lines.append(" * Northway — generated design tokens.")
     lines.append(" * DO NOT EDIT. Source: tokens/tokens.json. Rebuild: python tokens/build.py")
     lines.append(" * Light theme only. Components bind these names, never raw hex, never a font-family string.")
-    lines.append(" * Template and demo studio: Northway (labelled Sample).")
+    lines.append(" * Northway v2. Demo disclosure lives in the footer.")
     lines.append(" */")
     lines.append("")
     lines.append(":root {")
@@ -391,13 +391,13 @@ def resolved_color(tree, path):
     from coloraide import Color
 
     if path == "SCRIM_STRONG_OVER_WHITE":
-        ink = Color("#1A1A1A")
+        ink = resolved_color(tree, "semantic.color.text.default")
         a = 0.64
         # blend over white
         fr, fg, fb = ink.convert("srgb").coords()
         return Color("srgb", [fr * a + 1 * (1 - a), fg * a + 1 * (1 - a), fb * a + 1 * (1 - a)])
     if path == "SCRIM_GRADIENT_OVER_WHITE":
-        ink = Color("#1A1A1A")
+        ink = resolved_color(tree, "semantic.color.text.default")
         a = 0.72
         fr, fg, fb = ink.convert("srgb").coords()
         return Color("srgb", [fr * a + 1 * (1 - a), fg * a + 1 * (1 - a), fb * a + 1 * (1 - a)])

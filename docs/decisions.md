@@ -1,3 +1,5 @@
+> Later approved decisions: [v2/DECISIONS-V2.md](../v2/DECISIONS-V2.md), 13 November 2026. These replace conflicting v1 brand, type, Sample-label and section-layout decisions below.
+
 # Decisions
 
 What is locked for Northway, the first Skala sellable website template, and what is still open. Last updated 12 November 2026, Europe/Stockholm.

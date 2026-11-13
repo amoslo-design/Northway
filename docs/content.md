@@ -1,10 +1,12 @@
+> V2 copy is now implemented in `/content`, following [CONVERSION.md](../v2/docs/CONVERSION.md#demo-studio-writing--quality-bar). The original draft below is historical: no per-item Sample labels or prefixes appear on public pages. See [homepage-copy.md](homepage-copy.md) for the current reading script.
+
 # Northway demo content
 
 All Sample copy for the Code edition, to be stored in `/content`. Every record is fictional and must be labelled Sample. A `LAUNCH.md` checklist should list every item here. Buyers replace this before they launch. Never present a percentage result. Never invent a client, result, logo or quote beyond what is written here.
 
 Source: the UX Lead spec (12 November 2026, Europe/Stockholm), with a few completions where the Page named a record but did not write the full body. Completions are marked **Drafted for the demo** and follow the Page's voice and facts. Prefer the Page text where both exist.
 
-Studio voice: "we", international English, short and clear. No founder name. No em dashes.
+Studio voice: "we", international English, short and clear. No founder name. No em dashes. The tone refinement on 12 November 2026 follows [voice-and-microcopy.md](voice-and-microcopy.md). Use [homepage-copy.md](homepage-copy.md) as the Home reading script and the voice guide for form hints and field-level feedback.
 
 ---
 
@@ -38,7 +40,7 @@ Use these as the `/content/settings.json` defaults.
 
 **Meta, Home.** Title: "Northway - Work that earns the next project. (Sample studio)". Description: "Sample consultancy website for the Skala template. Northway is a strategy and growth consultancy with a clear process and a fixed price. Replace this content before launch."
 
-**Hero lede.** Northway is a strategy and growth consultancy for companies that want a clear position, a plan they can run, and a price before they start.
+**Hero lede.** We are a strategy and growth consultancy. We help companies clarify their offer, shape their brand and build a marketing plan their team can run.
 
 **Principles** (About, and Home proof in the demo):
 
@@ -48,10 +50,10 @@ Use these as the `/content/settings.json` defaults.
 
 **Process** (Home and Services), heading "How a project runs":
 
-1. Intro: a short call, the goal and the package.
-2. Plan: the brief, the research, the measure of success.
-3. Strategy: positioning, messaging, and the plan, with two review rounds.
-4. Handover: deliver the work, then a short results review.
+1. Intro: A short call to agree the goal and the package.
+2. Plan: The brief, the research, and how we will measure success.
+3. Strategy: Positioning, messaging, and the plan, with two review rounds.
+4. Handover: We deliver the work, then hold a short results review.
 
 **Exclusions** (Services, "What's not included"): Media spend, ad account management, website design and build, and photography production are outside the package unless agreed. (Sample exclusions, editable.)
 
@@ -68,7 +70,7 @@ Three packages, all Sample. CTA on each card: Start a project, to `/contact?serv
 - Slug: `position`
 - Price: $8,000
 - Timeline: 6 weeks
-- Short: Positioning and messaging so the offer is clear before the first conversation.
+- Short: Make your offer clear, with positioning and messaging you can use in the first conversation.
 - Typical scenario: a specialist firm whose work is hard to explain.
 - Typical mark: no
 
@@ -77,7 +79,7 @@ Three packages, all Sample. CTA on each card: Start a project, to `/contact?serv
 - Slug: `grow`
 - Price: $16,000
 - Timeline: 10 weeks
-- Short: Brand strategy and a marketing plan aimed at qualified enquiries.
+- Short: Bring your brand strategy and marketing plan together around the enquiries you want.
 - Typical scenario: a consultancy that wants a clearer offer and a plan they can run.
 - Typical mark: **yes** (the demo's Typical package)
 
@@ -86,7 +88,7 @@ Three packages, all Sample. CTA on each card: Start a project, to `/contact?serv
 - Slug: `brand`
 - Price: $28,000
 - Timeline: 14 weeks
-- Short: Positioning, brand strategy, and a marketing system as one engagement.
+- Short: Connect your positioning, brand strategy and marketing in one engagement.
 - Typical scenario: a firm changing how it goes to market.
 - Typical mark: no
 
@@ -261,8 +263,8 @@ No photos. Omit every testimonials block if this collection is emptied. No fake 
 The Page asks for four Home-group items and does not specify the questions. These are **drafted for the demo**, aligned with the Services answers and the Home voice. Link under the list: More questions, to `/services#faq`.
 
 1. **How does a project start?** With a short enquiry, then a call. We agree the goal and the package before we begin. (Sample.)
-2. **Are the prices fixed?** Yes. The published price and weeks are the engagement, excl. VAT/sales tax. If the scope changes we pause, re-quote a fixed change, then continue. (Sample.)
-3. **Who is this for?** Companies that want a clear position, a plan they can run, and a price before they start. We work remotely. (Sample.)
+2. **Are the prices fixed?** Yes. The published price covers the agreed scope and timeline, excl. VAT/sales tax. If the scope changes, we pause, agree a fixed price for the change, then continue. (Sample.)
+3. **Who is this for?** Companies that need a clearer offer and a practical marketing plan. We work remotely, with a fixed scope and price. (Sample.)
 4. **What happens after we enquire?** We reply within one working day. If we are a fit, we book a short intro and recommend a package. (Sample.)
 
 ### Services group (specified on the Page)
@@ -306,7 +308,7 @@ Calendar: hidden in the demo. Title if shown: Pick a time.
 
 **Home, services teaser heading:** Know the price before we talk.
 
-**Home, studio short.** Heading: A studio built around the work. Body: We believe a position should earn the next project. We set a goal, we work to a fixed price and a set of weeks, and we review after handover. Link: About the studio.
+**Home, studio short.** Heading: A studio built around the work. Body: Good strategy should be useful after the presentation. We agree the goal, set the price and timeline, and leave your team with a plan they can use. Link: About the studio.
 
 **Home, final CTA.** Heading: Ready to start a project? Sub: Fixed price. Set timeline. A short enquiry.
 

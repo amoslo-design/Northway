@@ -1,3 +1,5 @@
+> Current Home order: Briefing, Case Ledger, Insights, Price Tablet, Process Path, Studio short, FAQ, Pine Band, Footer. Empty teasers hide. The [approved v2 direction](../v2/DECISIONS-V2.md) overrides the v1 visual and badge notes below.
+
 # Northway: week-one plan
 
 UX Lead's plan for building the Northway template this week. Binding detail lives in [docs/spec.md](spec.md). Demo copy lives in [docs/content.md](content.md). Tokens and visual rules live in [design/DESIGN-SYSTEM.md](../design/DESIGN-SYSTEM.md). Decisions live in [docs/decisions.md](decisions.md). This file is the map: sitemap, sections, components, content model, journeys, scope, and a day-by-day build order.

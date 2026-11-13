@@ -6,3 +6,8 @@ node_modules/
 out/
 .env
 .env.local
+*.tsbuildinfo
+playwright-report/
+test-results/
+
+.cache/
