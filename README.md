@@ -1,4 +1,5 @@
 The v2 build still looked AI-generated. v3 fixes are in v2/DECISIONS-V2.md (section "v3 decisions"), v2/design/CRITIQUE-V2.md and v2/docs/UX-CRITIQUE-V2.md, which override earlier docs. Key change: white #FFFFFF canvas with #E8E8E4 elevated surfaces, no numbering, no monogram.
+Start the visual rebuild from [v2/REBUILD-BRIEF-V3.md](v2/REBUILD-BRIEF-V3.md).
 
 # Northway
 
