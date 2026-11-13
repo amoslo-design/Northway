@@ -1,0 +1,62 @@
+{
+  "studioName": "Northway",
+  "tagline": "Work that earns the next project.",
+  "promise": "Work that earns the next project.",
+  "ctaLabel": "Start a project",
+  "workLabel": "Case studies",
+  "heroResult": "Patients knew who the clinic was for, and booked a first visit from the site.",
+  "heroResultClient": "Kindred Clinic",
+  "heroQuote": "",
+  "heroQuoteName": "",
+  "heroQuoteRole": "",
+  "heroImage": null,
+  "heroLede": "We are a strategy and growth consultancy. A clear position, a plan your team can run, and a price before you start.",
+  "email": "hello@northway.example",
+  "calendarUrl": "",
+  "showPrices": true,
+  "showInsights": true,
+  "showPrinciples": true,
+  "showCredit": false,
+  "fromPrice": "From $8,000",
+  "taxNote": "Prices excl. VAT/sales tax.",
+  "replyTime": "We reply within one working day.",
+  "principles": [
+    {
+      "title": "Fixed price.",
+      "body": "You know the number and the weeks."
+    },
+    {
+      "title": "Set timeline.",
+      "body": "A plan your team can run."
+    },
+    {
+      "title": "A result we agree before we start.",
+      "body": "We agree a goal before we start."
+    }
+  ],
+  "process": [
+    {
+      "title": "Intro",
+      "body": "A short call. We agree the goal and the package. You leave knowing the price and the weeks."
+    },
+    {
+      "title": "Plan",
+      "body": "The brief, the research, and how we will measure success."
+    },
+    {
+      "title": "Strategy",
+      "body": "Positioning, messaging, and the plan, with two review rounds."
+    },
+    {
+      "title": "Handover",
+      "body": "We deliver the work, then hold a short results review. The plan stays with your team."
+    }
+  ],
+  "studioHeading": "Strategy your team can put to work.",
+  "studioBody": "We agree the goal, the price and the weeks before we start. Through interviews, workshops and two review rounds, we turn a complex offer into positioning, messaging and a marketing plan your team can use after handover.",
+  "heroHeading": "A clear offer, a plan your team can run, a price before you start.",
+  "proofChips": [
+    "Six-week engagement",
+    "Two review rounds"
+  ]
+}
