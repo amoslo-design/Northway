@@ -59,7 +59,7 @@ test("responsive examples remain within the viewport and pass axe", async ({ pag
     await page.evaluate(() => document.fonts.ready);
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
     expect(overflow, `horizontal overflow at ${width}px`).toBe(false);
-    const results = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"]).analyze();
+    const results = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22a", "wcag22aa"]).analyze();
     expect(results.violations).toEqual([]);
   }
 });

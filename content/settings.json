@@ -58,5 +58,7 @@
   "proofChips": [
     "Six-week engagement",
     "Two review rounds"
-  ]
+  ],
+  "briefingCtaLabel": "Tell us about your brief",
+  "closingCtaLabel": "Let’s talk"
 }

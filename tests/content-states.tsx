@@ -30,3 +30,15 @@ test("hero falls back from result to named quote to the approved heading", async
   expect(fallback).toContain(settings.heroHeading);
   expect(fallback).not.toContain("folio-link");
 });
+
+test("Excerpt needs a featured case with distinct, attributed proof", async () => {
+  const { settings, projects } = await getContent();
+  const project = projects[0];
+  const normal = renderToStaticMarkup(<Hero settings={settings} project={project} />);
+  assert.match(normal, /class="excerpt"/);
+  assert.equal(normal.split("They made the next step obvious.").length - 1, 1);
+  for (const item of [{ ...project, featured: false }, { ...project, quoteName: "", hero: undefined }]) {
+    assert.doesNotMatch(renderToStaticMarkup(<Hero settings={settings} project={item} />), /excerpt-target/);
+  }
+  assert.doesNotMatch(renderToStaticMarkup(<Hero settings={{ ...settings, heroResult: project.quote! }} project={project} />), /excerpt-target/);
+});

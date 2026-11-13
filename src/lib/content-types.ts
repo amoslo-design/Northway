@@ -4,7 +4,7 @@ export type Service = { title: string; slug: string; short: string; price: strin
 export type Post = { title: string; slug: string; excerpt: string; date: string; sample: boolean; published: boolean; body: string; cover?: ImageAsset };
 export type Faq = { question: string; answer: string; group: "home" | "services"; order: number; sample: boolean };
 export type Settings = {
-  studioName: string; tagline: string; promise: string; ctaLabel: string; workLabel: string;
+  studioName: string; tagline: string; promise: string; ctaLabel: string; briefingCtaLabel?: string; closingCtaLabel?: string; workLabel: string;
   heroResult: string; heroResultClient: string; heroQuote: string; heroQuoteName: string; heroQuoteRole: string; heroImage?: ImageAsset | null;
   heroLede: string; email: string; calendarUrl: string; showPrices: boolean; showInsights: boolean; showPrinciples: boolean; showCredit: boolean;
   heroHeading: string; proofChips: string[];

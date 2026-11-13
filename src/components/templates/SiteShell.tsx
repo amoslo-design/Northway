@@ -12,5 +12,5 @@ export async function SiteShell({ children }: { children: ReactNode }) {
     ...(settings.showInsights && posts.length ? [{ label: "Insights", href: "/insights" }] : []),
     { label: "Contact", href: "/contact" },
   ];
-  return <><Nav studioName={settings.studioName} ctaLabel={settings.ctaLabel} links={links} />{children}<Footer settings={settings} links={links} /></>;
+  return <><Nav studioName={settings.studioName} ctaLabel="Discuss your project" links={links} />{children}<Footer settings={settings} links={links} /></>;
 }

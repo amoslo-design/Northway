@@ -1,3 +1,5 @@
+Visual v3 implementation follows [v2/VISUAL-V3-BUILD-CONTRACT.md](v2/VISUAL-V3-BUILD-CONTRACT.md), including the later approved UX review. Phosphor replaces Lucide; white canvas, grey elevated objects, no shadows, no numbering or monograms, and the quiet Home nav are locked. Older instructions below are historical wherever they conflict.
+
 The v2 build still looked AI-generated. v3 fixes are in v2/DECISIONS-V2.md (section "v3 decisions"), v2/design/CRITIQUE-V2.md and v2/docs/UX-CRITIQUE-V2.md, which override earlier docs. Key change: white #FFFFFF canvas with #E8E8E4 elevated surfaces, no numbering, no monogram.
 Start the visual rebuild from [v2/REBUILD-BRIEF-V3.md](v2/REBUILD-BRIEF-V3.md).
 

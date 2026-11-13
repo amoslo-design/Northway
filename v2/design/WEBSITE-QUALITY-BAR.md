@@ -322,29 +322,31 @@ Do not present a build, a mockup or a "quick preview" until this gate passes. If
 
 Mark each item yes, no, or not applicable. A "no" on any item marked **block** means you fix it before handoff. Two or more ordinary "no"s also means you fix first.
 
+Visual v3 self-review completed 13 November 2026. Evidence, captures and approved exceptions: [completed quality gate](../review/visual-v3/QUALITY-GATE.md). The later UX review permits distinct Briefing, Grow and Pine Band labels and one Home Insights heading-left/link-right opening. Those overrides apply to the corresponding checklist items below.
+
 **Blockers**
 
-- [ ] The page does not trip two or more tells from Step 9. **(block)**
-- [ ] No numbering of sections, steps, cases or lists. **(block)**
-- [ ] No two consecutive sections share a head and a layout. **(block)**
-- [ ] At least two long-page sections are not grids. **(block)**
-- [ ] At most one primary action per viewport; the same label and destination throughout. **(block)**
-- [ ] Contrast and focus states pass on canvas, elevated and band surfaces. **(block)**
-- [ ] Copy is specific, has no em dashes, and has no banned buzzwords. **(block)**
-- [ ] Empty blocks are omitted; there are no monograms, fake logos, or lorem. **(block)**
+- [x] The page does not trip two or more tells from Step 9. **(block)**
+- [x] No numbering of sections, steps, cases or lists. **(block)**
+- [x] No two consecutive sections share a head and a layout. **(block)**
+- [x] At least two long-page sections are not grids. **(block)**
+- [x] At most one primary action per viewport; the same label and destination throughout. **(block)**
+- [x] Contrast and focus states pass on canvas, elevated and band surfaces. **(block)**
+- [x] Copy is specific, has no em dashes, and has no banned buzzwords. **(block)**
+- [x] Empty blocks are omitted; there are no monograms, fake logos, or lorem. **(block)**
 
 **Craft**
 
-- [ ] Tokens match the locked system (type scale, spacing ladder, colour roles, radius, no default shadow).
-- [ ] Display type is the agreed weight and size; body stays in measure.
-- [ ] Elevation is fill (or a rare hairline), and not every block is a panel.
-- [ ] A deep accent, if any, is concentrated in a band or in actions, not sprinkled.
-- [ ] Quotes and flagship results appear once.
-- [ ] "See all" and secondary paths sit at the end of their content, as text.
-- [ ] Images (or the no-image treatment) follow the media plan.
-- [ ] Motion is quiet and respects reduced motion.
-- [ ] Mobile restacks without shrinking body or hiding the ask.
-- [ ] The implementation matches the reference lock; distinctive traits were not softened into safer defaults.
+- [x] Tokens match the locked system (type scale, spacing ladder, colour roles, radius, no default shadow).
+- [x] Display type is the agreed weight and size; body stays in measure.
+- [x] Elevation is fill (or a rare hairline), and not every block is a panel.
+- [x] A deep accent, if any, is concentrated in a band or in actions, not sprinkled.
+- [x] Quotes and flagship results appear once.
+- [x] "See all" and secondary paths sit at the end of their content, as text.
+- [x] Images (or the no-image treatment) follow the media plan.
+- [x] Motion is quiet and respects reduced motion.
+- [x] Mobile restacks without shrinking body or hiding the ask.
+- [x] The implementation matches the reference lock; distinctive traits were not softened into safer defaults.
 
 ### Fix, then show
 

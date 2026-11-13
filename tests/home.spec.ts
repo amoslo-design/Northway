@@ -1,13 +1,13 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-test("home follows the approved v2 structure and has working destinations", async ({ page, request }) => {
+test("home follows the approved v3 structure and has working destinations", async ({ page, request }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Patients knew who the clinic was for, and booked a first visit from the site.");
   const sections = await page.locator("main > section").evaluateAll(nodes => nodes.map(node => node.getAttribute("id") || node.getAttribute("aria-label") || node.getAttribute("aria-labelledby")));
   expect(sections).toEqual(["home-heading", "case-studies", "insights", "price-tablet", "process", "studio", "faq", "cta-heading"]);
-  await expect(page.locator(".case-card")).toHaveCount(4);
-  await expect(page.locator(".post-card")).toHaveCount(3);
+  await expect(page.locator(".home-case")).toHaveCount(4);
+  await expect(page.locator(".home-article")).toHaveCount(3);
   await expect(page.locator(".service-card")).toHaveCount(3);
   await expect(page.locator(".home-hero img")).toHaveCount(0);
   const destinations = await page.locator('a[href^="/"]').evaluateAll(nodes => [...new Set(nodes.map(node => node.getAttribute("href")!))]);
@@ -49,13 +49,13 @@ test("mobile navigation traps focus, closes on Escape and restores focus", async
 });
 
 test("homepage stays within each viewport and passes accessibility checks", async ({ page }) => {
-  test.setTimeout(60000);
-  for (const width of [320, 768, 1024, 1440]) {
+  test.setTimeout(120000);
+  for (const width of [320, 390, 768, 1024, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/");
     await page.evaluate(() => document.fonts.ready);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), `width ${width}`).toBe(true);
-    const result = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"]).analyze();
+    const result = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22a", "wcag22aa"]).analyze();
     expect(result.violations).toEqual([]);
     if (width === 1440) await page.screenshot({ path: "test-results/northway-homepage-desktop.png", fullPage: true });
     if (width === 320) await page.screenshot({ path: "test-results/northway-homepage-mobile.png", fullPage: true });

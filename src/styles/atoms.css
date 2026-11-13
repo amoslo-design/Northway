@@ -47,7 +47,7 @@
 .control--textarea { min-block-size: var(--textarea-min-height); resize: vertical; }
 .control--select { cursor: pointer; }
 .field { display: flex; flex-direction: column; gap: var(--field-gap); min-inline-size: 0; }
-.field__label { color: var(--field-label-color); font-family: var(--font-ui); font-size: var(--type-body-size); font-weight: var(--font-weight-medium); }
+.field__label { color: var(--field-label-color); font-family: var(--font-ui); font-size: var(--type-label-size); font-weight: var(--font-weight-medium); }
 .field__optional, .field__help { color: var(--field-help-color); }
 .field__help { margin: 0; font-size: var(--field-help-size); line-height: var(--type-body-leading); }
 .field__error { display: flex; align-items: flex-start; gap: var(--field-gap); margin: 0; padding: var(--space-inline); border-radius: var(--input-radius); color: var(--field-error-color); background: var(--field-error-bg); font-size: var(--field-help-size); line-height: var(--type-body-leading); }
@@ -63,7 +63,15 @@
 }
 
 /* V2 roles: display and meta carry Bricolage; working copy stays Hanken. */
-.text--heading-2, .text--heading-3 { font-family: var(--font-body); }
+.text--heading-3 { font-family: var(--font-body); }
 .text--meta { font-family: var(--font-meta); font-size: var(--type-meta-size); font-weight: var(--type-meta-weight); line-height: var(--type-meta-leading); letter-spacing: var(--type-meta-tracking); text-transform: uppercase; }
 .control:not(.control--textarea) { block-size: var(--input-height); line-height: var(--type-caption-leading); }
 .link { min-inline-size: var(--space-target); }
+
+.text--short-display { font-size: var(--type-short-display-size); line-height: var(--type-short-display-leading); letter-spacing: var(--type-short-display-tracking); font-weight: var(--type-short-display-weight); }
+.text--excerpt { font-size: var(--type-excerpt-size); line-height: var(--type-excerpt-leading); letter-spacing: var(--type-excerpt-tracking); font-weight: var(--type-excerpt-weight); }
+.text--proof { font-size: var(--type-proof-size); line-height: var(--type-proof-leading); letter-spacing: var(--type-proof-tracking); font-weight: var(--type-proof-weight); }
+.text--from-price { font-size: var(--type-from-price-size); line-height: var(--type-from-price-leading); letter-spacing: var(--type-from-price-tracking); font-weight: var(--type-from-price-weight); }
+.text--short-display, .text--excerpt { font-family: var(--font-display); text-wrap: balance; }
+.button--secondary, .button--ghost { border: 0; border-radius: var(--radius-none); padding-inline: 0; background: transparent; text-decoration: underline; text-underline-offset: var(--badge-sample-pad-y); }
+.tag { border-radius: var(--radius-sm); }

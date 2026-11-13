@@ -28,9 +28,9 @@ export function HomeFaq({ items }: { items: Faq[] }) {
 export function HomeClose({ settings }: { settings: Settings }) {
   return <section className="cta-band pine-surface brand-band" aria-labelledby="cta-heading">
     <div className="site-container cta-inner">
-      <Text as="h2" variant="heading-1" id="cta-heading">Ready when you are.</Text>
+      <Text as="h2" variant="short-display" id="cta-heading">Ready when you are.</Text>
       <Text variant="lead" muted>{settings.replyTime}</Text>
-      <span data-primary-action><Button size="lg" variant="brand-band" href="/contact">{settings.ctaLabel}</Button></span>
+      <span data-primary-action><Button size="lg" variant="brand-band" href="/contact">{settings.closingCtaLabel || "Let’s talk"}</Button></span>
     </div>
   </section>;
 }

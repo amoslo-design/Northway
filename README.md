@@ -35,25 +35,25 @@ v1 is light theme only. Enquiries go through a form. A calendar slot appears onl
 - Case pages are text-first: Outcome, Challenge, Approach, Results, optional images.
 - Case cards work without images (typographic fallback). The Kindred demo card has no image.
 - Insights is a primary nav item and a Home section, hidden when there are no posts.
-- The Briefing leads with a result as the H1, or a named quote, with an approved heading fallback. A Folio replaces a missing photograph.
+- The Briefing leads with a result as the H1, or a named quote, with an approved heading fallback. A named-quote Excerpt can peek from the band when a featured case is available.
 - Demo packages: Position ($8,000, 6 weeks), Grow ($16,000, 10 weeks, Typical), Brand + growth ($28,000, 14 weeks).
 
 Full decisions: [docs/decisions.md](docs/decisions.md). Full plan: [docs/plan.md](docs/plan.md). Full spec: [docs/spec.md](docs/spec.md).
 
 ## Design
 
-The approved v2 visual system is implemented in the existing token source. Read `v2/DECISIONS-V2.md`, `v2/design/BRAND-V2.md` and `v2/docs/CONVERSION.md` before historical v1 notes.
+The approved v3 visual system is implemented in the existing token source. Read `v2/DECISIONS-V2.md`, `v2/design/BRAND-V2.md` and `v2/docs/CONVERSION.md` before historical v1 notes.
 
 - Guide: [design/DESIGN-SYSTEM.md](design/DESIGN-SYSTEM.md)
 - Tokens (W3C DTCG source of truth): [design/tokens/tokens.json](design/tokens/tokens.json)
 - Generated CSS: [design/tokens/tokens.css](design/tokens/tokens.css), [design/tokens/theme.css](design/tokens/theme.css) (rebuild with `python design/tokens/build.py`)
 - Typefaces: **Bricolage Grotesque** 500/600 for display; **Hanken Grotesk** 400 / 400 italic / 500 / 600 for body and UI. Both OFL licences ship in `public/fonts`.
-- Canvas: `#F2F2EF`, white cards and chapters, pine `#1F3A2E` bands, cream type on green. Light base.
+- Canvas: `#FFFFFF`, elevated objects `#E8E8E4` without shadows, pine `#1F3A2E` bands, cream type on green. Light base.
 - Icons: Phosphor Regular, used for controls and status.
 - Reference board: [design/REFERENCE-BOARD.md](design/REFERENCE-BOARD.md), shots in [design/references/shots](design/references/shots) and [design/shots](design/shots)
 - Figma: [https://www.figma.com/design/YfjwKelPQpskTVHJ6xJ1p3](https://www.figma.com/design/YfjwKelPQpskTVHJ6xJ1p3) (rename the file title to "Northway - Design System" if it still has an older title)
 
-V2 replaces the old warm-grey, ink-accent, Hanken-only direction. Empty Home teasers hide; fictional content is disclosed once in the footer.
+V3 replaces the old warm-grey, ink-accent, Hanken-only direction. Empty Home teasers hide; fictional content is disclosed once in the footer.
 
 ## Docs in this repo
 
@@ -95,13 +95,15 @@ npm run build
 npm test
 ```
 
+Browser checks use port 3002 and a separate `.next-visual-v3` folder by default, so they do not overwrite another local preview. Set `NORTHWAY_BASE_URL` to test an existing server. Set `NORTHWAY_DIST_DIR` to isolate another build.
+
 Browser checks use installed Google Chrome. On a machine without Chrome, run `npx playwright install chrome` before `npm test`.
 
 The app uses Next.js 15, TypeScript, React 19, Tailwind v4, Phosphor and self-hosted Bricolage Grotesque/Hanken Grotesk. The fonts come from Fontsource and needs no Google Fonts connection at build time. Motion is limited to control feedback and a loading spinner, with reduced motion supported in CSS. Framer Motion is reserved for later sections that need it.
 
-The original tokens remain the source of truth. Run `npm run tokens` after changing `design/tokens/tokens.json`. Components use semantic and component tokens only. A few spacing aliases, a hairline alias and preview layout widths were added for the component library.
+The generated tokens remain the source of truth. Run `npm run tokens` after changing `design/tokens/tokens.json`. Components use semantic and component tokens only. A few spacing aliases, a hairline alias and preview layout widths were added for the component library.
 
-The homepage follows v2: Briefing, Case Ledger, Insights, Price Tablet, Process Path, Studio short, FAQ, Pine Band and continuous footer. It uses the existing atoms plus Nav, Footer, Hero, CaseCard, PostCard, ServiceCard, Process, FAQ and CTA components. Missing cases omit the Home ledger and peek. The index retains an honest empty. Missing posts hide Insights in the page, navigation and footer. `showPrices` hides every price figure. Hero content falls back from result to attributed quote to heading and lede.
+The homepage follows v3: Briefing, Case Ledger, Insights, Price Tablet, Process Path, Studio short, FAQ, Pine Band and continuous footer. It uses the existing atoms plus Nav, Footer, Hero, CaseCard, PostCard, HomePricing, Process, FAQ and CTA components. Missing cases omit the Home ledger and peek. The index retains an honest empty. Missing posts hide Insights in the page, navigation and footer. `showPrices` hides every price figure. Hero content falls back from result to attributed quote to heading and lede.
 
 Edit studio settings in `content/settings.json`. Projects, posts, services, FAQs and team members are Markdown files in their own `content` folders. Their front matter is a JSON object between `---` lines, followed by optional body paragraphs. Keep the existing field names. The parser deliberately accepts this small, explicit format without a CMS dependency. Project dates are fictional sorting values within the supplied sample years. Internal sample flags support launch checks. The public site has one footer disclosure, with no per-item badges or prefixes. No project imagery is supplied or invented.
 
@@ -118,3 +120,19 @@ Next.js 15's nested PostCSS is overridden to the patched direct PostCSS dependen
 The template's sale licence (single-site in v1) will be stated on skala.design. Hanken Grotesk and Bricolage Grotesque remain under the SIL Open Font Licence 1.1, with licence files in `public/fonts`. Demo content is fictional Sample and is not real client work.
 
 The v2 execution plan and verification record are in `docs/IMPLEMENTATION-V2.md`. Run `python3 scripts/check-contrast.py` for the token contrast checks. `npm test` runs server-rendered content-state tests and browser checks. Grain is a local static SVG at 6% opacity; reduced-data, Save-Data, print and forced-colour modes omit it.
+
+## Visual v3 review
+
+The approved review and complete 390 / 1024 / 1280 type table are in [the build contract](v2/VISUAL-V3-BUILD-CONTRACT.md). The reference lock is in [the analysis](v2/VISUAL-V3-ANALYSIS.md) and [Refero synthesis](v2/design/refero/SYNTHESIS.md). The completed gate and full-page captures are in [the review record](v2/review/visual-v3/QUALITY-GATE.md).
+
+Home uses three primary labels: `briefingCtaLabel` (Tell us about your brief), `ctaLabel` (Start a project, Grow only) and `closingCtaLabel` (Let's talk). All remain editable in settings. The Home navigation stays quiet at every scroll position. Services has Grow as its only primary and a text-only closing invitation.
+
+To regenerate and check token contrast:
+
+```bash
+python3 -m venv /tmp/northway-tokens
+/tmp/northway-tokens/bin/pip install coloraide
+/tmp/northway-tokens/bin/python design/tokens/build.py --check
+```
+
+The check also rejects drift in the locked canvas, elevated surfaces, pine, hairline and primitive shadows. Reference files preserve their historical disagreements; the build contract records the later approved overrides.

@@ -19,12 +19,11 @@ export function HomeInsights({ posts }: { posts: Post[] }) {
     <div className="site-container">
       <header className="home-notes-head">
         <Text as="h2" variant="heading-2" id="insights-heading">Insights</Text>
-        <Text muted>Notes on the decisions behind the work.</Text>
+        <Link href="/insights">See all insights</Link>
       </header>
       <div className="home-notes-content">
         <ArticleEntry post={featured} featured />
         {quiet.length ? <div className="home-notes-quiet">{quiet.map(post => <ArticleEntry key={post.slug} post={post} />)}</div> : null}
-        <Link href="/insights">See all insights</Link>
       </div>
     </div>
   </section>;

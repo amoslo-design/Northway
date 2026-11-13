@@ -1,0 +1,10 @@
+{
+  "mode": "production",
+  "externalMessagesSent": 0,
+  "receiver": "loopback-only",
+  "evidence": [
+    "Browser -> production API -> local receiver rejection -> 502 -> visible failure, values retained.",
+    "Browser -> production API -> local receiver accepted exact payload -> pending disabled button -> success, form replaced.",
+    "Production API rejects invalid service and email (400), accepts honeypot without forwarding, and reports missing FORM_ENDPOINT (503)."
+  ]
+}

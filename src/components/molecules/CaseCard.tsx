@@ -1,13 +1,12 @@
+import Image from "next/image";
 import NextLink from "next/link";
 import { Text } from "@/components/atoms/Text";
-import { Waymark } from "@/components/atoms/Waymark";
-import { Folio } from "./Folio";
 import type { Project } from "@/lib/content-types";
 
 export function CaseCard({ project, index = 0 }: { project: Project; index?: number }) {
-  return <NextLink href={`/case-studies/${project.slug}`} className="case-card ledger-row" data-featured={index === 0}>
-    <span className="ledger-index"><Waymark size="small" /><span>{String(index + 1).padStart(2, "0")}</span></span>
-    <div className="ledger-copy"><Text variant="meta">{project.sector} · {project.year}</Text><Text as="h3" variant={index === 0 ? "heading-1" : "heading-3"}>{project.client}</Text><Text variant="lead">{project.oneLineResult}</Text></div>
-    {index === 0 || project.hero ? <Folio project={project} compact /> : null}
+  const sector = project.sector.charAt(0).toUpperCase() + project.sector.slice(1);
+  return <NextLink href={`/case-studies/${project.slug}`} className="case-card index-entry" data-featured={index === 0}>
+    <div className="index-entry-copy"><Text as="h2" variant={index === 0 ? "heading-1" : "heading-3"}>{project.client}</Text><Text variant="caption" muted>{sector}, {project.year}.</Text><Text variant={index === 0 ? "lead" : "body"}>{project.oneLineResult}</Text><span className="entry-read">Read the case study</span></div>
+    {project.hero ? <Image {...project.hero} alt={project.hero.alt} className="index-entry-image" sizes="(max-width: 767px) 100vw, 50vw" /> : null}
   </NextLink>;
 }

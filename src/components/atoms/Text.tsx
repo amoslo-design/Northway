@@ -1,7 +1,7 @@
 import type { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
 import { classes } from "@/lib/classes";
 
-type TextVariant = "display" | "heading-1" | "heading-2" | "heading-3" | "lead" | "body" | "label" | "caption" | "meta";
+type TextVariant = "short-display" | "excerpt" | "proof" | "from-price" | "display" | "heading-1" | "heading-2" | "heading-3" | "lead" | "body" | "label" | "caption" | "meta";
 type TextProps<T extends ElementType> = {
   as?: T;
   variant?: TextVariant;

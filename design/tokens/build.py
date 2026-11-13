@@ -177,7 +177,7 @@ def collect(tree):
 def emit_css(rows, tree) -> str:
     lines = []
     lines.append("/*")
-    lines.append(" * Northway — generated design tokens.")
+    lines.append(" * Northway , generated design tokens.")
     lines.append(" * DO NOT EDIT. Source: tokens/tokens.json. Rebuild: python tokens/build.py")
     lines.append(" * Light theme only. Components bind these names, never raw hex, never a font-family string.")
     lines.append(" * Northway v2. Demo disclosure lives in the footer.")
@@ -218,7 +218,7 @@ def emit_css(rows, tree) -> str:
     lines.append("}")
     lines.append("")
 
-    # Breakpoint modes — only for tokens that declare them
+    # Breakpoint modes , only for tokens that declare them
     # mobile default is already in some $values as desktop; modes override in media queries.
     # Convention: $value is desktop. Mobile is the default below 768 if we invert...
     # Better: $value is the desktop default in :root (we design at 1024).
@@ -307,7 +307,7 @@ def emit_theme(rows) -> str:
     """Tailwind v4 @theme. Public semantic and component names only (no --p- primitives)."""
     lines = []
     lines.append("/*")
-    lines.append(" * Northway — Tailwind v4 @theme.")
+    lines.append(" * Northway , Tailwind v4 @theme.")
     lines.append(" * DO NOT EDIT. Source: tokens/tokens.json. Rebuild: python tokens/build.py")
     lines.append(" */")
     lines.append("")
@@ -348,7 +348,7 @@ PAIRS = [
     ("semantic.color.text.muted", "semantic.color.bg.default", 4.5, "color.text.muted on color.bg", "secondary"),
     ("semantic.color.text.muted", "semantic.color.surface.default", 4.5, "color.text.muted on color.surface", ""),
     ("semantic.color.text.muted", "semantic.color.surface.raised", 4.5, "color.text.muted on color.surface.raised", ""),
-    ("semantic.color.accent.default", "semantic.color.bg.default", 4.5, "color.accent on color.bg (link)", "underlined at rest — same as ink"),
+    ("semantic.color.accent.default", "semantic.color.bg.default", 4.5, "color.accent on color.bg (link)", "underlined at rest , same as ink"),
     ("semantic.color.accent.contrast", "semantic.color.accent.default", 4.5, "color.accent.contrast on color.accent", "primary button"),
     ("semantic.color.accent.contrast", "semantic.color.accent.hover", 4.5, "color.accent.contrast on color.accent.hover", ""),
     ("semantic.color.border.input", "semantic.color.bg.default", 3.0, "color.border.input on color.bg", "tightest UI"),
@@ -423,6 +423,22 @@ def check(tree) -> int:
     from coloraide import Color
 
     failed = 0
+    locks = {
+        "primitive.color.canvas": "#FFFFFF",
+        "primitive.color.surface": "#E8E8E4",
+        "primitive.color.surface-raised": "#E8E8E4",
+        "primitive.color.border-hairline": "#C8C8C3",
+        "primitive.color.pine": "#1F3A2E",
+    }
+    for path, expected in locks.items():
+        value = resolved_color(tree, path).to_string(hex=True).upper()
+        if value != expected:
+            print(f"FAIL locked colour {path}: {value}, expected {expected}")
+            failed += 1
+    for key, token in tree["primitive"]["shadow"].items():
+        if not key.startswith("$") and token.get("$value") != "none":
+            print(f"FAIL shadow {key}: expected none")
+            failed += 1
     print(f"{'Pair':<52} {'Ratio':>7} {'Need':>5}  Result  Notes")
     print("-" * 100)
     results = []
