@@ -8,7 +8,8 @@ Read in this order:
 3. `design/BRAND-V2.md`: palette, tokens, type scale, assets and the signature components.
 4. `docs/CONVERSION.md`: testable MUST / MUST NOT conversion rules.
 5. `design/CRITIQUE.md` and `docs/UX-CRITIQUE.md`: what was wrong in v1 and how each item is fixed.
-6. `design/MOTION.md`: motion outline (do last).
+6. `design/CRITIQUE-V2.md` and `docs/UX-CRITIQUE-V2.md`: why the v2 build still looked AI-generated, with the ranked fixes for v3. These override earlier docs where they conflict.
+7. `design/MOTION.md`: motion outline (do last).
 
 Signature components to build: the Briefing (hero), the Case Ledger, the Price Tablet, the Process Path, the Enquiry Sheet and the Pine Band (continuous with the footer).
 

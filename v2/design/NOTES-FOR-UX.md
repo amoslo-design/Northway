@@ -1,78 +1,99 @@
-# Notes for UX Lead — Northway v2 visual direction
+# Notes for UX Lead — Northway v3 visual direction
 
-Updated 13 November 2026, Europe/Stockholm, to the **chosen Eden direction**: green, white and light grey, with a handsome sans-serif. The previous note (result-first on warm paper, Newsreader, copper Folio, left-weighted 7+5 split) is superseded in its *visuals*. Conversion settlements stay: the result is the display lead, the old slogan moves to the footer, the from-price sits in the first-view CTA cluster, Kindred works with no photograph, `/case-studies` gets an honest empty, story figures only.
+Written first, 13 November 2026, Europe/Stockholm, so you could align while `UX-CRITIQUE-V2.md` and `CRITIQUE-V2.md` were being written. Both files are now on disk, and they agree on the bans and on the section structures below. Proposal only.
 
-Full values, contrast and tokens: [`BRAND-V2.md`](BRAND-V2.md). Please read the **Eden reference notes** and the **CONVERSION.md impacts** sections there. A short impacts list is repeated at the end of this note.
+Codex’s v2 build followed our docs and still looks generated. Amos’s verdict: it is “super AI generated with the numbering, the layout etc.,” and the canvas must be **white**, with **grey as the elevated colour**. Full critique and token updates will land in `CRITIQUE-V2.md`, `BRAND-V2.md` and `PRINCIPLES.md`. This note is the v3 visual direction for the key sections.
 
-Proposal only. Studio voice. Demo studio is Northway, fully written, no Sample badges.
-
-**Direction, in brief:** Pine `#1F3A2E` (Eden’s forest green), white, light grey `#F2F2EF`. Cream-white sans headlines on grained green bands (the Briefing and the Pine Band). **Bricolage Grotesque** for display (alternative: Mona Sans); **Hanken Grotesk** for body, 18 / 1.55. Copper, oxblood, warm paper and the display serif are dropped.
+Bricolage Grotesque for display, Hanken Grotesk for body, pine `#1F3A2E` bands and grain, and the conversion settlements (result-first, from-price, one primary, no Sample badges, story figures, Kindred without a photo) stay.
 
 ---
 
-## Hero concept — the Briefing (revised)
+## Colour (locked by the brief)
 
-The first viewport is a **centred pine band**, full bleed, 6% grain — the Eden adoption — **not** a left-weighted 7+5 split. It must still lead with the result and show the from-price.
-
-- **Centre, on pine.** Optional tracked uppercase attribution, cream-muted, 13 / 0.10em: **KINDRED CLINIC  ·  HEALTH  ·  2025** (factual meta, not a marketing eyebrow). Then the Kindred **result** in Bricolage 600 at 56 / 64, cream `#F7F7F4`, two or three lines, a centred measure: **“Patients knew who the clinic was for, and booked a first visit from the site.”** This is the first large type. Then the Hanken lede at 20 / 1.45, cream-muted, about 36–42ch, centred: **“We are a strategy and growth consultancy. A clear position, a plan your team can run, and a price before you start.”** At most two still **proof chips** (story figures: “Six-week engagement,” “Two review rounds” — not a repeated from-price, not logos, not orbiting). **One** primary: a **white pill**, pine text, **Start a project** → `/contact`. In the same cluster, when `showPrices` is on: **From $8,000.** at Hanken 500 / 16px / cream (11.49:1), text-linked to `#price-tablet`, plus the tax note in cream-muted caption. Not a second pill.
-- **At the foot.** Kindred’s **peeking case card** — a Folio, because Kindred ships with no photograph: white card, 12px radius, soft shadow, overlapping the next light-grey section, a large Bricolage “K” in pine, result, meta, optional quote. No empty frame, no product screenshot. When a featured case has a still, the photograph sits in that card instead.
-- **No** second pill, **no** three-card row, **no** Sample chip, **no** app-icon cloud. The old slogan, **“Work that earns the next project.”**, stays in the footer. Fallback H1, only when result and quote are empty: **“A clear offer, a plan your team can run, a price before you start.”**
-- **Nav CTA.** On the green band: quiet cream text. After the band scrolls away: the pine pill appears in a light nav. One primary in view.
-- On mobile: the same stack; peeking card still in the first one-and-a-half screens.
-
-The tracked uppercase attribution is a sans expressive moment we want to keep. It conflicts with CONVERSION’s “MUST NOT. Eyebrow labels.” We are asking for a carve-out: allow this factual meta; keep forbidding marketing eyebrows above section headings. See impacts below.
+- **Canvas:** white `#FFFFFF`. The page is a white sheet.
+- **Elevated / raised:** **`#E8E8E4`** (oklch 0.930 0.0053 106.5), used for the Price Tablet, the Excerpt, the Enquiry Sheet, and Strategy’s process panel. `#F2F2EF` is only 1.12:1 against white and does not read as a surface; `#E8E8E4` is 1.23:1, same cool family. Tightest required text: muted on elevated **6.28:1**. Tightest UI: input border on elevated **4.47:1**. Full table in BRAND-V2. Hover `#E3E3DF`.
+- **Pine bands:** unchanged (`#1F3A2E`, 6% grain, cream type, white pill).
+- **Elevation language:** the grey *fill* is the elevation. Default: **no drop shadow** (shadows on white read as SaaS cards). Optional 1px decorative border, not a 3:1 chrome line. This replaces “white card + soft shadow on a grey page,” which is what Codex built, and which Amos has inverted.
 
 ---
 
-## Type scale
+## The Briefing (hero)
 
-**Pairing:** [Bricolage Grotesque](https://fonts.google.com/specimen/Bricolage+Grotesque) (SIL OFL) for `font.display` and `font.meta`. [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk) (SIL OFL) for `font.body` and `font.ui`. Alternative display: [Mona Sans](https://fonts.google.com/specimen/Mona+Sans). **No serif.**
+Keep: centred pine band, result as the first large type, from-price in the CTA cluster, one white pill, peeking object at the foot that does not take first focus, stacks below the CTAs on mobile.
 
-Weights loaded: Bricolage 500 and 600; Hanken 400, 400 italic, 500, 600.
+Change (visual):
 
-| Style | Mobile | Tablet 768 | Desktop 1024 | Wide 1280 | Family / weight | Tracking | Leading |
-|---|---|---|---|---|---|---|---|
-| Display (result) | 36–40 clamp / 1.12 | 48 / 1.10 | **56 / 1.08** | **64 / 1.06** | Bricolage 600 | −0.03em | as shown |
-| Display (short, ≤10 words) | 40 clamp / 1.10 | 56 / 1.08 | 68 / 1.06 | 80 / 1.04 | Bricolage 500 | −0.03em | |
-| Heading 1 | 32 / 1.18 | 40 / 1.14 | 48 / 1.12 | 52 / 1.10 | Bricolage 500 | −0.02em | |
-| Heading 2 | 24 / 1.25 | 28 / 1.22 | 32 / 1.20 | 32 / 1.20 | Hanken 500 | −0.015em | |
-| Heading 3 | 20 / 1.30 | 22 / 1.28 | 24 / 1.28 | 24 / 1.28 | Hanken 500 | −0.01em | |
-| Lead | 18 / 1.45 | 18 / 1.45 | 20 / 1.45 | 20 / 1.45 | Hanken 400 | 0 | |
-| Quote | 20 / 1.40 | 22 / 1.38 | 24 / 1.35 | 24 / 1.35 | Hanken 400 italic | 0 | |
-| Body | **18 / 1.55** at every breakpoint | same | same | same | Hanken 400 | 0 | locked |
-| **Meta / eyebrow** | **12 / 1.30 / 0.10em**, uppercase | same | **13 / 1.30 / 0.10em** | same | Bricolage 500 | | |
-| Label | 13 / 1.35 / 0.04em | same | same | same | Hanken 500 | | |
-| Caption | 14 / 1.40 / 0.01em | same | same | same | Hanken 400 | | |
-| From-price | 16 / 1.4 | same | same | same | Hanken 500 | 0 | cream on pine |
-| Button | 16 / 1, optically centred in 44 (md) or 52 (lg) | same | same | same | Hanken 500 | 0 | |
+- **No outline pills for proof.** The two chips (“Six-week engagement,” “Two review rounds”) read as extra buttons. Replace with a single cream-muted sentence under the lede, in Hanken 400 at 16–18: “A six-week engagement, with two review rounds.” Not a chip, not a pill, not a row of tags.
+- **The peeking object is an Excerpt, not a Folio monogram.** See no-image treatment below. It must not repeat the display result verbatim (v2 says the Kindred sentence three times in one scroll: hero, card, first ledger row).
+- Uppercase attribution (`KINDRED CLINIC · HEALTH · 2025`) may stay once, in the Briefing only, as the agreed factual meta. It must not be repeated on the peeking card or on every ledger row.
+
+Layout of the band itself stays yours; this is the visual treatment.
 
 ---
 
-## Signature components — still 1:1 with your names
+## The Case Ledger
 
-Visuals updated; structure and behaviour remain yours.
+v2 is a generated tell: `01–04`, a waymark on every row, an uppercase eyebrow on every row, identical hairlines, and a giant “K” card hanging off the first row. We invited the indexes and the monogram; that was a mistake.
 
-1. **The Briefing** — as above. Centred pine band, result at display scale, white pill, from-price in the cluster, peeking Folio.
-2. **The Case Ledger** — text-first uneven rows. Pine waymark, result, uppercase meta. Folio (pine sans initial on a white card) or full-width text when there is no still; 3:2 still in a white card when there is. Four fully written cases. “See all case studies” is a text link. Empty Home teaser omitted; `/case-studies` with zero projects gets a short honest empty on a white card, never a fake grid, and not a redirect.
-3. **The Price Tablet** — one white rate sheet (12px, soft shadow), not three SaaS cards. Grow carries a pine rule **and** **TYPICAL**, once — not a chip, not colour alone. One pine primary, on the Grow row, to `/contact?service=grow`. Your figures and copy.
-4. **The Enquiry Sheet** — a white letter-card, pine left edge. Reply-time above the fields. Four fields, **Send the brief.** Direct email beside or under.
-5. **The Process Path** — four steps (Intro, Plan, Strategy, Handover), your outcomes, a pine waymark spine, uneven widths (Strategy gets more room). No 01–04 equal columns.
-6. **The Pine Band** — pine, 6% grain, continuous with the footer on the **same** green. Bricolage cream heading, **one white pill** with pine text. Footer is quieter (cream-muted disclosure: “Northway is a demonstration studio that ships with this template.”), not a second black or near-black slab.
+v3, visual:
 
-The **Waymark** is a pine (cream on green) 4px bar with a 4px north cut — no copper. The **Folio** is the no-image treatment, sans and pine, no serif initial.
+- **No index numbers. No waymark-as-bullet on rows. No uppercase eyebrow on every row.**
+- **Featured first case (Kindred):** an editorial opening — the Excerpt panel on the left or right (grey elevated, see below), client name in Bricolage at Heading 1 or 2, the one-line result in Hanken lead, sector and year as a caption sentence (“Health, 2025”), not as `HEALTH · 2025`. More height than its neighbours.
+- **The other three:** quieter text entries, uneven measure, **space instead of hairlines** (or a single rule under the last row only). Client in Hanken 500 or Bricolage 500 at Heading 3; result in body; caption “Consulting, 2025.”
+- The whole row is still the target. “See all case studies” is a text link at the **end of the list**, not mirrored in the section head (see section heads).
+
+Structure and rhythm are yours to craft; the visual bans and the featured-versus-quiet contrast are ours.
 
 ---
 
-## CONVERSION.md impacts (please update your wording)
+## No-image treatment — the Excerpt (replaces the Folio)
 
-We do not believe we fight a behaviour MUST, except that we need a carve-out on eyebrows. Full write-up: BRAND-V2, “CONVERSION.md impacts.”
+The giant Bricolage “K” is a monogram pretending to be a photograph. It reads as a logo-maker default, and we specified it, so the tell is on us. It is withdrawn.
 
-1. **Eyebrow MUST NOT.** Please allow a tracked uppercase **attribution / meta** line (Briefing attribution, sector/year, “Typical”). Keep forbidding marketing eyebrows (“NEW WORK,” “WHAT WE DO”) above section headings. This is a deliberate Eden adoption and our sans expressive moment. The result remains the first large type.
-2. **Briefing layout.** Please describe the Briefing as a **centred pine band** with a peeking case card, not as the earlier 7+5 split. Result-first, from-price in the CTA cluster, one primary, no-photo Folio — all still true.
-3. **CTA colour (FYI, visual).** White pill / pine text on green; pine pill / cream text on light.
-4. **Footer on inverse (FYI).** Inverse is the same pine as the Pine Band; one continuous green close. Disclosure and nav mirror still live in the footer.
-5. **Stale visual names.** Newsreader, copper and “paper surfaces” in your Designer-first and Open lines can be updated to Bricolage (or Mona), pine, and white cards. Body 18 / 1.55 is unchanged.
+**The Excerpt:** a grey elevated panel (`radius` 8 or 12, **no shadow**, no monogram). Inside: a named quote or the one-line result, set in Bricolage 500 at lead or Heading 2 size, ink, at a readable measure. Client and a caption underneath, Hanken 400. An optional 3–4px pine tick on the left, once — not a full-height bar, and not repeated around the site. The panel is a pulled quotation from a briefing, not a brand mark.
 
-Everything else — one primary, published prices, Grow’s non-colour cue, text-first cases, optional images, four-field form, story figures, page list, Sample-badge proposal — is unchanged.
+When a still exists, the photograph fills this same panel (clipped), caption below, no letter over the image. Kindred ships as a quote Excerpt, never as a “K.”
+
+Used in the peeking Briefing slot and for any no-image featured case. Not required on every quiet ledger row (those are text-complete without a panel). For Kindred, the peeking Excerpt carries **“They made the next step obvious.”** — Amira Mendez, clinic manager — once. The same quote should not also sit under the Price Tablet.
+
+---
+
+## The Process Path
+
+v2 is `1 2 3 4` in four equal columns, each with a waymark, then a second, separate “Strategy your team can put to work” card. The numbering is a textbook tell; we invited a “Bricolage index (‘1’–‘4’).” Withdrawn.
+
+v3, visual:
+
+- **No numbers, no 01–04, no circled indexes, no “step 1.”** Names only: Intro, Plan, Strategy, Handover.
+- **One** continuous thin pine spine (a 2px vertical rule on mobile; on desktop, either a single horizontal hairline behind the names, or a vertical spine if you stack them). Not a waymark on every step.
+- **Uneven, not four equal columns.** Strategy is the decisive step: it gets the grey elevated panel and the fuller copy (“Strategy your team can put to work…”), absorbing the separate studio-ish card below so we do not say Strategy twice.
+- The other three steps are short name + outcome, in body, with more air than a grid cell.
+
+Please craft the structural alternative; we will not re-specify a four-column grid.
+
+---
+
+## Section heads
+
+v2 repeats **waymark + heading on the left + text link (or dek) on the right + a hairline** on Case studies, Insights (a close variant), Price, Process and FAQ. Once is a pattern; five times is a template.
+
+v3:
+
+- That exact pattern may be used **at most once** on a page (if at all).
+- Other sections: a heading with an optional one-line dek directly underneath, left-weighted, no waymark. “See all” sits at the **end of the content**, as a text link, not opposite the title.
+- **The waymark is no longer a section-head bullet.** Reserve it for the wordmark, the current nav item, and at most one hero-level moment. A waymark on every heading and every row is why the page feels stamped.
+
+---
+
+## Other visual notes, briefly
+
+- **Price Tablet:** the one-sheet structure and “TYPICAL” + pine rule on Grow are sound. On a white canvas the sheet is **grey elevated, no shadow**. Position and Brand + growth already use text links; only Grow has the pine pill — keep that. One primary in the viewport still applies (nav quiet while a pill is in view).
+- **Studio short:** do not centre a white rounded card as a second “quote card” that looks like the Folio and the Price sheet. On white, a left-weighted text block is enough; or use one Excerpt if there is a named quote.
+- **Pine Band and footer:** stay. Continuous pine, one white pill, disclosure. The centred close is allowed, as with the Briefing. Do not add a waymark as a floating cream bar above the heading if it repeats the hero’s device beat-for-beat — a heading and a button are enough.
+- **Pills:** only the primary (and the white-on-pine equivalent). No outline pill chips, no pill tags, no pill nav items.
+
+`CRITIQUE-V2.md` is now written: every tell is listed and ranked. For pure layout and rhythm the fixes are short and point to your file. Long fixes are type, colour, imagery, texture and the visual treatment of the components. PRINCIPLES, BRAND-V2 and MOTION are revised to match this note.
+
+If anything in this note clashes with a layout you have already written, prefer a conversation under ‘Open with Designer’ rather than silently diverging. The colour inversion, the Excerpt, the no-numbers ban, the reserved waymark and the section-head limit are visual locks I will not give way on; structure inside those locks is yours.
 
 — Designer

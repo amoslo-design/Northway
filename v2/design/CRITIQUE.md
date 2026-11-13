@@ -1,5 +1,7 @@
 # Northway — Visual and brand critique of Codex v1
 
+> **For the current (v2) build, see [`CRITIQUE-V2.md`](CRITIQUE-V2.md).** This file remains as the critique of Codex’s v1 screenshot. v3 visual fixes (white canvas, the Excerpt, no numbers, reserved waymark) are in CRITIQUE-V2, BRAND-V2 and PRINCIPLES, and supersede any conflicting “Fix” line below — in particular the Folio monogram, process indexes, proof chips, and the grey-canvas / white-card model.
+
 **Proposal only.** Revised 13 November 2026, Europe/Stockholm. The recommended *fixes* follow the chosen Eden direction (pine, white, light grey, sans). The diagnosis of the screenshot is unchanged. Does not change the repo or Figma.
 
 This is the visual and brand reading of [`/workspace/northway-v2/codex-v1-screenshot.png`](/workspace/northway-v2/codex-v1-screenshot.png). UX Lead’s conversion and content reading of the same build is [`/workspace/northway-v2/docs/UX-CRITIQUE.md`](/workspace/northway-v2/docs/UX-CRITIQUE.md). We agree on the diagnosis and do not repeat their arguments at length; where a point is primarily a conversion failure, we point there and add only what is visual.

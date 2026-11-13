@@ -1,4 +1,4 @@
-v2 design direction (approved 2026-11-13) lives in /v2. Read v2/CODEX-BRIEF.md and v2/DECISIONS-V2.md first; they override the earlier brand (warm grey #DBDBD8, black accent, Hanken-only) wherever they conflict.
+The v2 build still looked AI-generated. v3 fixes are in v2/DECISIONS-V2.md (section "v3 decisions"), v2/design/CRITIQUE-V2.md and v2/docs/UX-CRITIQUE-V2.md, which override earlier docs. Key change: white #FFFFFF canvas with #E8E8E4 elevated surfaces, no numbering, no monogram.
 
 # Northway
 
