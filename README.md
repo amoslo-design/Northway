@@ -1,3 +1,5 @@
+v2 design direction (approved 2026-11-13) lives in /v2. Read v2/CODEX-BRIEF.md and v2/DECISIONS-V2.md first; they override the earlier brand (warm grey #DBDBD8, black accent, Hanken-only) wherever they conflict.
+
 # Northway
 
 Northway is Skala Design Studio's first sellable website template, to be listed on [skala.design](https://skala.design). One name is used as both the product name and the fictional demo studio inside the kit.

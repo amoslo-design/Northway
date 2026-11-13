@@ -1,3 +1,5 @@
+v2 design direction (approved 2026-11-13) lives in /v2. Read v2/CODEX-BRIEF.md and v2/DECISIONS-V2.md first; they override the earlier brand (warm grey #DBDBD8, black accent, Hanken-only) wherever they conflict.
+
 # AGENTS.md
 
 Instructions for Codex and Gemini (and any other agent) building the Northway website template this week. Read this file first, then follow the docs it points to. Do not wait for Amos, Designer or UX Lead, and do not ask clarifying questions that block the build. If something is still open, use the working assumption in [docs/decisions.md](docs/decisions.md) or [docs/spec.md](docs/spec.md), pick the calmer and more accessible option, and note it in the README.
