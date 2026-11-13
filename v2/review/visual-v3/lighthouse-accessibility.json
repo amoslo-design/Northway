@@ -1,0 +1,58 @@
+[
+  {
+    "page": "home",
+    "width": 1440,
+    "lighthouseVersion": "13.6.0",
+    "accessibility": 100,
+    "failed": []
+  },
+  {
+    "page": "case",
+    "width": 1440,
+    "lighthouseVersion": "13.6.0",
+    "accessibility": 100,
+    "failed": []
+  },
+  {
+    "page": "services",
+    "width": 1440,
+    "lighthouseVersion": "13.6.0",
+    "accessibility": 100,
+    "failed": []
+  },
+  {
+    "page": "contact",
+    "width": 1440,
+    "lighthouseVersion": "13.6.0",
+    "accessibility": 100,
+    "failed": []
+  },
+  {
+    "page": "home",
+    "width": 390,
+    "lighthouseVersion": "13.6.0",
+    "accessibility": 100,
+    "failed": []
+  },
+  {
+    "page": "case",
+    "width": 390,
+    "lighthouseVersion": "13.6.0",
+    "accessibility": 100,
+    "failed": []
+  },
+  {
+    "page": "services",
+    "width": 390,
+    "lighthouseVersion": "13.6.0",
+    "accessibility": 100,
+    "failed": []
+  },
+  {
+    "page": "contact",
+    "width": 390,
+    "lighthouseVersion": "13.6.0",
+    "accessibility": 100,
+    "failed": []
+  }
+]

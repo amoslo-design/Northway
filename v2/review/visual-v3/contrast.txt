@@ -1,0 +1,51 @@
+Wrote tokens/tokens.css (22523 bytes, 478 tokens)
+Wrote tokens/theme.css (13726 bytes)
+Pair                                                   Ratio  Need  Result  Notes
+----------------------------------------------------------------------------------------------------
+color.text on color.bg                                16.34:1   4.5  Pass      body
+color.text on color.surface                           13.30:1   4.5  Pass      
+color.text on color.surface.raised                    13.30:1   4.5  Pass      
+color.text on color.surface.hover                     12.70:1   4.5  Pass      
+color.text on color.surface.pressed                   12.10:1   4.5  Pass      
+color.text.muted on color.bg                           7.71:1   4.5  Pass      secondary
+color.text.muted on color.surface                      6.28:1   4.5  Pass      
+color.text.muted on color.surface.raised               6.28:1   4.5  Pass      
+color.accent on color.bg (link)                       12.33:1   4.5  Pass      underlined at rest , same as ink
+color.accent.contrast on color.accent                 11.49:1   4.5  Pass      primary button
+color.accent.contrast on color.accent.hover           13.41:1   4.5  Pass      
+color.border.input on color.bg                         5.49:1   3.0  Pass      tightest UI
+color.border.input on color.surface                    4.47:1   3.0  Pass      
+color.border.input on color.surface.raised             4.47:1   3.0  Pass      
+color.focus on color.bg                               12.33:1   3.0  Pass      
+color.focus.inverse on inverse.bg                     11.49:1   3.0  Pass      
+inverse.text on inverse.bg                            11.49:1   4.5  Pass      
+inverse.text.secondary on inverse.bg                   8.57:1   4.5  Pass      
+inverse.cta.text on inverse.cta.bg                    12.33:1   4.5  Pass      white pill
+inverse.cta.text on inverse.cta.hover                 10.04:1   4.5  Pass      
+inverse.cta.text on inverse.cta.pressed               12.33:1   4.5  Pass      
+brand-band.text on brand-band.bg                      11.49:1   4.5  Pass      
+brand-band.text.secondary on brand-band.bg             8.57:1   4.5  Pass      
+brand-band.cta.text on brand-band.cta.bg              12.33:1   4.5  Pass      
+color.danger.text on color.danger.muted                7.85:1   4.5  Pass      
+color.danger.text on color.bg                          9.72:1   4.5  Pass      
+color.danger.border on color.bg                        4.65:1   3.0  Pass      
+color.danger.border on color.danger.muted              3.75:1   3.0  Pass      
+color.success.text on color.success.muted              7.95:1   4.5  Pass      
+color.success.text on color.bg                         9.69:1   4.5  Pass      
+color.success.border on color.bg                       4.94:1   3.0  Pass      
+color.success.border on color.success.muted            4.05:1   3.0  Pass      
+color.warning.text on color.warning.muted              6.54:1   4.5  Pass      
+color.warning (icon) on color.bg                       7.58:1   3.0  Pass      
+tag.sample.text on tag.sample.bg                       6.46:1   4.5  Pass      
+tag.text on tag.bg                                    12.70:1   4.5  Pass      
+tag.selected.text on tag.selected.bg                  13.30:1   4.5  Pass      
+selected.text on selected.bg                          13.30:1   4.5  Pass      
+color.text.disabled on color.bg                        3.94:1     0  Reported  exempt, reported
+color.border.hairline on color.bg                      1.68:1     0  Reported  decorative, reported
+scrim.text over scrim.strong on a white photo          4.95:1   4.5  Pass      composited
+scrim.text over scrim.gradient on a white photo        6.47:1   4.5  Pass      composited
+color.accent.inverse on inverse.bg                     8.57:1   4.5  Pass      optional
+color.text on color.bg.disabled                       12.70:1   4.5  Pass      
+
+Required pairs: 42/42 pass. Failed: 0.
+Tightest passing required: 3.75:1

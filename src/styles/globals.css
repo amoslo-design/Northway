@@ -1,0 +1,26 @@
+@import "../../design/tokens/theme.css";
+@import "../../design/tokens/tokens.css";
+@import "./fonts.css";
+@import "./atoms.css";
+@import "./preview.css";
+@import "./site.css";
+@import "./home.css";
+
+* { box-sizing: border-box; }
+html { scroll-padding-top: var(--space-nav); color-scheme: light; }
+body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); font-size: var(--type-body-size); line-height: var(--type-body-leading); -webkit-font-smoothing: antialiased; }
+button, input, select, textarea { font: inherit; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button, a { touch-action: manipulation; }
+button { cursor: pointer; }
+button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
+a { color: inherit; }
+button, input, select, textarea { min-inline-size: 0; }
+svg { flex-shrink: 0; }
+::selection { background: var(--color-text); color: var(--color-accent-contrast); }
+.inverse { color: var(--inverse-text); background: var(--inverse-bg); }
+.brand-band { color: var(--brand-band-text); background: var(--brand-band-bg); }
+.sr-only { position: absolute; inline-size: var(--stroke-hairline); block-size: var(--stroke-hairline); padding: 0; margin: 0; clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition-duration: var(--duration-instant) !important; scroll-behavior: auto !important; }
+}

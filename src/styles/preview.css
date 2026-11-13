@@ -1,0 +1,46 @@
+.library-shell { max-inline-size: calc(var(--layout-content-max) + var(--layout-gutter) * 2); margin-inline: auto; padding-inline: var(--layout-gutter); }
+.library-header { min-block-size: var(--space-nav); display: flex; align-items: center; justify-content: space-between; gap: var(--space-stack-sm); border-bottom: var(--stroke-hairline) solid var(--color-border-hairline); }
+.library-wordmark { font-size: var(--type-wordmark-display); font-weight: var(--type-wordmark-weight); letter-spacing: var(--type-wordmark-tracking); text-decoration: none; min-block-size: var(--space-target); display: inline-flex; align-items: center; }
+.library-layout { display: grid; grid-template-columns: var(--layout-rail) minmax(0, 1fr); gap: var(--space-block-lg); }
+.library-index { align-self: start; position: sticky; top: var(--space-stack-lg); padding-block: var(--space-block-lg); }
+.library-index nav { display: flex; flex-direction: column; gap: var(--space-inline); margin-block: var(--space-stack-md); }
+.library-index a { display: flex; align-items: center; gap: var(--space-stack-sm); min-block-size: var(--space-target); text-decoration: none; color: var(--color-text-muted); }
+.library-index a:hover, .library-index a:focus-visible { color: var(--color-text); text-decoration: underline; text-underline-offset: var(--badge-sample-pad-y); }
+.library-main { min-inline-size: 0; }
+.library-intro { padding-block: var(--space-section); display: grid; gap: var(--space-stack-md); }
+.library-intro .text--lead { max-inline-size: var(--layout-measure); }
+.library-section { padding-block: var(--space-block-lg); border-top: var(--stroke-hairline) solid var(--color-border-hairline); scroll-margin-top: var(--space-stack-lg); }
+.section-title { display: flex; align-items: baseline; gap: var(--space-stack-sm); margin-block-end: var(--space-block-sm); }
+.section-title > .text--caption { font-variant-numeric: tabular-nums; }
+.specimen-stack { display: grid; gap: var(--space-stack-lg); }
+.specimen-line { display: grid; gap: var(--space-stack-sm); padding-block: var(--space-stack-md); border-bottom: var(--stroke-hairline) solid var(--color-border-hairline); }
+.specimen-line:last-child { border-bottom: 0; }
+.specimen-row { display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-stack-sm); }
+.specimen-label { margin-block-end: var(--space-stack-sm); }
+.specimen-block { display: grid; gap: var(--space-stack-md); }
+.specimen-surface { padding: var(--space-stack-lg); display: grid; gap: var(--space-stack-md); }
+.specimen-surface .specimen-row { align-items: center; }
+.palette { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-stack-sm); }
+.swatch { display: grid; gap: var(--space-inline); }
+.swatch__colour { aspect-ratio: 3 / 2; border: var(--stroke-hairline) solid var(--color-border-hairline); }
+.swatch__colour--canvas { background: var(--color-bg); }
+.swatch__colour--surface { background: var(--color-surface-raised); }
+.swatch__colour--ink { background: var(--color-text); }
+.swatch__colour--inverse { background: var(--inverse-bg); }
+.field-examples { max-inline-size: var(--layout-form); display: grid; gap: var(--space-stack-lg); }
+.preview-feedback { padding: var(--space-stack-sm); border: var(--stroke-hairline) solid var(--color-success-border); color: var(--color-success-text); background: var(--color-success-muted); display: flex; gap: var(--space-inline); align-items: center; }
+.icon-specimen { display: grid; justify-items: center; gap: var(--space-inline); min-inline-size: var(--space-block-lg); }
+.library-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--space-stack-sm); padding-block: var(--space-block-sm); border-top: var(--stroke-hairline) solid var(--color-border-hairline); }
+@media (max-width: 1023px) {
+  .library-layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .library-index { position: static; padding-block: var(--space-stack-md); border-bottom: var(--stroke-hairline) solid var(--color-border-hairline); }
+  .library-index nav { flex-direction: row; flex-wrap: wrap; gap: var(--space-inline) var(--space-stack-md); margin-block: var(--space-inline) 0; }
+  .library-index__note { display: none; }
+  .library-intro { padding-block: var(--space-block-lg); }
+}
+@media (max-width: 767px) {
+  .library-header { align-items: center; }
+  .library-header .text--caption { max-inline-size: 12ch; text-align: end; }
+  .palette { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .specimen-surface { padding: var(--space-stack-md); }
+}
