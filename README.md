@@ -1,4 +1,4 @@
-The approved v2 design direction lives in `v2/`. Read `v2/CODEX-BRIEF.md` and `v2/DECISIONS-V2.md` first; they override the earlier visual direction.
+Northway visual v3 follows [v2/REBUILD-BRIEF-V3.md](v2/REBUILD-BRIEF-V3.md), the locked decisions and the approved UX review. Existing setup and content instructions remain below.
 
 # Northway
 
